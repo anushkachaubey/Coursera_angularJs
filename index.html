@@ -1,13 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coursera</title>
-</head>
-<body>
-    <h1>Hello welcome</h1>
-    
-</body>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+    <title>Name_Value</title>
+  </head>
+
+  <body ng-app="MyFirstApp">
+      <H1>Find the ascii value of your name</H1>
+    <div ng-controller="MyFirstController">
+        <div>
+            Enter your name 
+            <input type="text" 
+            ng-model="name" 
+            ng-keyup="calcval();">
+        </div>
+        <div>
+            Value of your name is: {{finalvalue}}
+        </div>
+    </div>
+  </body>
 </html>
